@@ -295,7 +295,7 @@ export default function topup() {
                 <option>Binance</option>
                 <option>Celo</option>
               </select>
-              <span className="text6">Gas Fee - {gas / 10 ** 18}</span>
+              <span className="text61">Gas Fee - {gas / 10 ** 18}</span>
               {allowance >= amm ? (
                 <button onClick={topup} className="rbut">
                   Submit

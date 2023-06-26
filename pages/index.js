@@ -115,7 +115,7 @@ export default function dashboard() {
             </div>
 
             <CopyToClipboard
-              text={`http://localhost:3001/receive?address=${address}&&chain=${chain?.network}`}
+              text={`https://interchain.netlify.app/receive?address=${address}&&chain=${chain?.network}`}
             >
               <button
                 onClick={() => toast.info("Payment Link copied")}

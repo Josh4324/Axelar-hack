@@ -4,7 +4,7 @@ export default function Side() {
   return (
     <div className="side">
       <Link href="/">
-        <div className="logo">DePay</div>
+        <div className="logo">DePay </div>
       </Link>
 
       <div className="side-inner">

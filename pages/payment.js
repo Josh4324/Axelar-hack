@@ -62,7 +62,7 @@ export default function payment() {
               <ConnectButton />
             </div>
           </div>
-          <section className="home-section1">
+          <section style={{ marginTop: "100px" }} className="home-section1">
             <table id="customers">
               <tbody>
                 <tr>

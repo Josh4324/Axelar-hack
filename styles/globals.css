@@ -63,7 +63,7 @@ a {
   background-color: #f4aa00;
   width: 225px;
   padding-top: 50px;
-  padding-left: 50px;
+  padding-left: 25px;
 }
 
 .side-inner {
@@ -88,7 +88,7 @@ a {
 }
 
 .side-text-inner {
-  padding-left: 16px;
+  padding-left: 10px;
 }
 
 /*  Home */
@@ -487,6 +487,8 @@ a {
   border: 1px solid #1b1c1e;
   border-radius: 4px;
   margin-bottom: 20px;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
 }
 
 .rlabel {

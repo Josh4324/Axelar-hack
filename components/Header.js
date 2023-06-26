@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="header">
       <Link href="/">
-        <div className="logo">DePay</div>
+        <div className="logo">InterChain Pay</div>
       </Link>
 
       <div className="inner-header">
