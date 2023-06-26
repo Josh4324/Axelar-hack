@@ -149,7 +149,7 @@ export default function topup() {
         "aUSDC",
         amount,
         {
-          value: ethers.utils.parseEther("0.001"),
+          value: gasFee,
         }
       );
 
