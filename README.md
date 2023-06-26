@@ -27,6 +27,11 @@ https://testnet.axelarscan.io/gmp/0xc1e065159cefc34ecb145182882cb962ddbc1f8ebc99
 https://testnet.axelarscan.io/gmp/0x94149d05594a0702d3999d4cd67caac867086cd4f2ed95edccd87a846b7b838b:20
 https://testnet.axelarscan.io/gmp/0x9991bd6cd1860978a5d8f1389392b3b37bfc397bf8c14fcbe3894becf79b88a7:6
 
+### Positive Experience
+
+The documentation was very helpful to get me started and the example repo was great
+I enjoyed working on the project because of the usefulness of the tech, it is not just another protocol, it is a tech,i will glady integrate into my projects in the future.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
