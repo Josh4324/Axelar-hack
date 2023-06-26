@@ -138,7 +138,6 @@ export default function topup() {
       2
     );
 
-    console.log(gasFee);
     setGasFee(gasFee);
     const id = toast.loading("Transaction in progress..");
 
@@ -150,7 +149,7 @@ export default function topup() {
         "aUSDC",
         amount,
         {
-          value: gasFee,
+          value: ethers.utils.parseEther("0.001"),
         }
       );
 
@@ -299,7 +298,7 @@ export default function topup() {
               <span className="text61">Gas Fee - {gas / 10 ** 18}</span>
               {allowance >= amm ? (
                 <button onClick={topup} className="rbut">
-                  Submit
+                  Send
                 </button>
               ) : (
                 <button onClick={approve} className="rbut">
