@@ -159,6 +159,7 @@ export default function topup() {
       walletRef.current.value = "";
       chainRef.current.value = "Select Chain";
       setGasFee(0);
+      allow();
 
       toast.update(id, {
         render:
