@@ -60,6 +60,7 @@ export default function payment() {
                 width: "50px",
                 marginTop: "50px",
               }}
+              className="nope"
               src="./ham.svg"
               onClick={() => setToggle(!toggle)}
             />
