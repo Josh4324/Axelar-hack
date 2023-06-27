@@ -8,7 +8,7 @@ export default function Side() {
         <div className="logo">DePay </div>
       </Link>
 
-      <div style={{ marginRight: "50px", marginTop: "50px" }}>
+      <div className="nope" style={{ marginRight: "50px", marginTop: "50px" }}>
         <ConnectButton />
       </div>
 

@@ -31,7 +31,7 @@ export default function topup() {
   const { chain, chains } = useNetwork();
   const api = new AxelarQueryAPI({ environment: Environment.TESTNET });
   const { address } = useAccount();
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   const createPayContract = async () => {
     const { ethereum } = window;

@@ -723,6 +723,10 @@ a {
   width: 100%;
 }
 
+.nope {
+  display: none;
+}
+
 @media (max-width: 500px) {
   .side {
     min-height: 100vh;
@@ -791,5 +795,9 @@ a {
 
   .text4 {
     padding: 5px;
+  }
+
+  .nope {
+    display: block;
   }
 }

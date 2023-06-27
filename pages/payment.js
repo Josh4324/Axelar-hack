@@ -11,7 +11,7 @@ import { useAccount, useNetwork } from "wagmi";
 export default function payment() {
   const router = useRouter();
   const { chain, chains } = useNetwork();
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   const [history, setHistory] = useState([]);
 
