@@ -267,7 +267,11 @@ export default function topup() {
         </div>
         <section className="home-section1">
           <div className="reqp">
-            <div className="text4"></div>
+            <div className="text4">
+              {" "}
+              Receive Payment in aUSDC on Binance || Polygon || Celo ||
+              Avalanche
+            </div>
             <input className="input2" value={addr} />
             <input
               className="input2"
