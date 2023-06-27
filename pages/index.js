@@ -19,6 +19,7 @@ export default function dashboard() {
   const [wallet, setWallet] = useState("");
   const [balance, setBalance] = useState(0);
   const [allowance, setAllowance] = useState(0);
+  const [toggle, setToggle] = useState(false);
 
   const createUSDContract = async () => {
     const { ethereum } = window;
@@ -78,10 +79,19 @@ export default function dashboard() {
   return (
     <div className="bg">
       <div className="divider">
-        <Side />
+        {toggle ? <Side /> : null}
+
         <main className="home-main">
           <div className="home-header">
             <div className="home-text1">Dashboard</div>
+            <img
+              style={{
+                width: "50px",
+                marginTop: "50px",
+              }}
+              src="./ham.svg"
+              onClick={() => setToggle(!toggle)}
+            />
             <div className="profile">
               <ConnectButton />
             </div>

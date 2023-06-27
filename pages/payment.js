@@ -1,20 +1,17 @@
 /* eslint-disable */
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import Link from "next/link";
 import Side from "../components/Side";
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { ethers } from "ethers";
 import receiveABI from "../abis/receive.json";
-import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useAccount, useNetwork } from "wagmi";
 
 export default function payment() {
   const router = useRouter();
   const { chain, chains } = useNetwork();
-
-  console.log(router.query);
+  const [toggle, setToggle] = useState(false);
 
   const [history, setHistory] = useState([]);
 
@@ -54,10 +51,18 @@ export default function payment() {
   return (
     <div className="bg">
       <div className="divider">
-        <Side />
+        {toggle ? <Side /> : null}
         <main className="home-main">
           <div className="home-header">
             <div className="home-text1">Payment Received</div>
+            <img
+              style={{
+                width: "50px",
+                marginTop: "50px",
+              }}
+              src="./ham.svg"
+              onClick={() => setToggle(!toggle)}
+            />
             <div className="profile">
               <ConnectButton />
             </div>

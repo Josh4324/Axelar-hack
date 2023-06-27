@@ -31,6 +31,7 @@ export default function topup() {
   const { chain, chains } = useNetwork();
   const api = new AxelarQueryAPI({ environment: Environment.TESTNET });
   const { address } = useAccount();
+  const [toggle, setToggle] = useState(false);
 
   const createPayContract = async () => {
     const { ethereum } = window;
@@ -272,10 +273,18 @@ export default function topup() {
   return (
     <div className="bg">
       <div className="divider">
-        <Side />
+        {toggle ? <Side /> : null}
         <main className="home-main">
           <div className="home-header">
             <div className="home-text1">Send Token</div>
+            <img
+              style={{
+                width: "50px",
+                marginTop: "50px",
+              }}
+              src="./ham.svg"
+              onClick={() => setToggle(!toggle)}
+            />
             <div className="profile">
               <ConnectButton />
             </div>

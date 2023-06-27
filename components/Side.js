@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export default function Side() {
   return (
@@ -6,6 +7,10 @@ export default function Side() {
       <Link href="/">
         <div className="logo">DePay </div>
       </Link>
+
+      <div style={{ marginRight: "50px", marginTop: "50px" }}>
+        <ConnectButton />
+      </div>
 
       <div className="side-inner">
         <Link href="/">
