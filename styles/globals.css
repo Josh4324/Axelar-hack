@@ -656,6 +656,16 @@ a {
   padding-left: 40px;
 }
 
+.text62 {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-size: 14px;
+  color: black;
+  padding-bottom: 5px;
+  display: block;
+  padding-left: 30px;
+}
+
 .rbut2 {
   width: 80%;
   height: 56px;

@@ -272,16 +272,18 @@ export default function topup() {
               {" "}
               Binance || Polygon || Celo || Avalanche
             </div>
-            <input className="input2" value={addr} />
+
+            <input className="input2" value={`Recipient Address -  ${addr}`} />
+
             <input
               className="input2"
               value={
                 chainT === "bsc-testnet"
-                  ? "Binance"
+                  ? "Recipient Chain - Binance"
                   : chainT === "maticmum"
-                  ? "Polygon"
+                  ? "Recipient Chain - Polygon"
                   : chainT === "avalanche-fuji"
-                  ? "Avalanche"
+                  ? "Recipient Chain - Avalanche"
                   : ""
               }
             />
