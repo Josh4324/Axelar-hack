@@ -78,6 +78,10 @@ export default function topup() {
     evt.preventDefault();
     const contract = await createReceiveContract();
 
+    if (amountRef.current.value === "") {
+      return toast.error("Please enter aUSDC Amount");
+    }
+
     const amount = ethers.utils.parseUnits(amountRef.current.value, 6);
 
     const caddress =

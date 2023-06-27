@@ -84,7 +84,15 @@ export default function topup() {
     evt.preventDefault();
     const contract = await createPayContract();
     if (amountRef.current.value === "") {
-      return toast.error("Please enter the amount");
+      return toast.error("Please enter aUSDC amount");
+    }
+
+    if (walletRef.current.value === "") {
+      return toast.error("Please enter recipient wallet address");
+    }
+
+    if (chainRef.current.value === "") {
+      return toast.error("Please select recipient chain");
     }
     const ch = chain.network;
 
@@ -289,7 +297,7 @@ export default function topup() {
                 placeholder="Enter Wallet Address"
               />
               <select ref={chainRef} className="input">
-                <option>Select Chain</option>
+                <option value="">Select Chain</option>
                 <option> Polygon </option>
                 <option>Avalanche</option>
                 <option>Binance</option>
