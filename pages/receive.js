@@ -267,10 +267,10 @@ export default function topup() {
         </div>
         <section className="home-section1">
           <div className="reqp">
-            <div className="text4">
+            <div className="text4"> You can pay aUSDC from any chain below</div>
+            <div className="text41">
               {" "}
-              Receive Payment in aUSDC on Binance || Polygon || Celo ||
-              Avalanche
+              Binance || Polygon || Celo || Avalanche
             </div>
             <input className="input2" value={addr} />
             <input
